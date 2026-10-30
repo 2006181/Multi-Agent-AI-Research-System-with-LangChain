@@ -1,0 +1,13 @@
+# LangChain & Agent Framework
+langchain
+langchain-core
+langchain-groq
+langgraph
+
+# Research Tools
+langchain-tavily
+beautifulsoup4
+requests
+
+# Environment Variables
+python-dotenv
