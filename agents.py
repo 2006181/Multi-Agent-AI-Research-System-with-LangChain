@@ -9,7 +9,7 @@ load_dotenv()
 
 #model setup 
 llm = ChatGroq(
-    model=MODEL,
+    model="openai/gpt-oss-20b",
     temperature=0,
     max_tokens=1500,
     max_retries=6,      # retries rate-limit errors automatically with backoff
