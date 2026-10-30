@@ -8,7 +8,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #model setup 
-llm = ChatGroq(model = "openai/gpt-oss-120b",temperature=0)
+llm = ChatGroq(
+    model="openai/gpt-oss-120b",
+    temperature=0,
+    max_tokens=2000,
+    reasoning_effort="low",   # this model reasons before answering; "low" uses far fewer tokens
+)
 
 
 #1st agent 
