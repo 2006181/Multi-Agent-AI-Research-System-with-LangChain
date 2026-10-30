@@ -9,7 +9,7 @@ load_dotenv()
 
 #model setup 
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-120b",
     temperature=0,
     max_tokens=2000,
     reasoning_effort="low",   # this model reasons before answering; "low" uses far fewer tokens
