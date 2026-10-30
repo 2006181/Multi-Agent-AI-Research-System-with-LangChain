@@ -9,12 +9,12 @@ load_dotenv()
 
 #model setup 
 llm = ChatGroq(
-    model="openai/gpt-oss-20b",
+    model=MODEL,
     temperature=0,
-    max_tokens=2000,
-    reasoning_effort="low",   # this model reasons before answering; "low" uses far fewer tokens
+    max_tokens=1500,
+    max_retries=6,      # retries rate-limit errors automatically with backoff
+    timeout=60,
 )
-
 
 #1st agent 
 def build_search_agent():
