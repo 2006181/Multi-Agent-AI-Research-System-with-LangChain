@@ -6,8 +6,13 @@ langgraph
 
 # Research Tools
 langchain-tavily
+tavily-python
 beautifulsoup4
 requests
+rich
+
+# UI
+streamlit
 
 # Environment Variables
 python-dotenv
